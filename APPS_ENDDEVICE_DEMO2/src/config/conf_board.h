@@ -55,4 +55,6 @@
 /* Delay in ms for TCXO to stabilize */
 #define RADIO_CLK_STABILITATION_DELAY       2
 
+#define ADDRESS_SWITCH_ENABLE 
+
 #endif /* CONF_BOARD_H_INCLUDED */

@@ -76,5 +76,37 @@ void system_board_init(void)
 	pin_conf.direction  = PORT_PIN_DIR_INPUT;
 	pin_conf.input_pull = PORT_PIN_PULL_UP;
 	port_pin_set_config(BUTTON_0_PIN, &pin_conf);
-		
+	
+	
+	// cSLIM SPESIFIC CONFIG
+	#define AD1_PIN PIN_PA14
+	#define AD2_PIN PIN_PA28
+	#define AD3_PIN PIN_PA15
+	#define AD4_PIN PIN_PA19
+	#define AD5_PIN PIN_PA18
+	#define AD6_PIN PIN_PA27
+	#define AD7_PIN PIN_PA08
+	#define AD8_PIN PIN_PA07
+
+	//This pin is uset for uart logging to nRF52840 from nRF9160. If USB is set up this can be received here and sent over USB
+	pin_conf.direction  = PORT_PIN_DIR_INPUT;
+	pin_conf.input_pull = PORT_PIN_PULL_UP;
+	port_pin_set_config(PIN_PA06, &pin_conf);
+	
+
+#ifdef ADDRESS_SWITCH_ENABLE 
+
+	pin_conf.direction  = PORT_PIN_DIR_INPUT;
+	pin_conf.input_pull = PORT_PIN_PULL_UP;
+	
+	port_pin_set_config(AD1_PIN, &pin_conf);
+	port_pin_set_config(AD2_PIN, &pin_conf);
+	port_pin_set_config(AD3_PIN, &pin_conf);
+	port_pin_set_config(AD4_PIN, &pin_conf);
+	port_pin_set_config(AD5_PIN, &pin_conf);
+	port_pin_set_config(AD6_PIN, &pin_conf);
+	port_pin_set_config(AD7_PIN, &pin_conf);
+	port_pin_set_config(AD8_PIN, &pin_conf);
+	
+#endif
 }

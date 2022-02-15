@@ -79,6 +79,8 @@ void Parser_Init(void);
 void Parser_Main(void);
 
 void Parser_GetSwVersion(char* pBuffData);
+//cSLIM Specific function
+void Parser_GetCustomID(char* pBuffData);
 
 uint8_t Parser_GetConfiguredJoinParameters(void);
 void Parser_SetConfiguredJoinParameters(uint8_t val);

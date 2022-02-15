@@ -133,7 +133,9 @@ src/parser/src/parser.d src/parser/src/parser.o: \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\string.h \
  ../src/config/conf_app.h ../src/parser/inc/parser_utils.h \
  ../src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.h \
- ../src/ASF/thirdparty/wireless/lorawan/sys/inc/system_task_manager.h
+ ../src/ASF/thirdparty/wireless/lorawan/sys/inc/system_task_manager.h \
+ ../src/parser/src/../../ASF/sam0/drivers/port/port.h \
+ ../src/ASF/sam0/drivers/system/pinmux/pinmux.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\stdlib.h:
 
@@ -410,3 +412,7 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 ../src/ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.h:
 
 ../src/ASF/thirdparty/wireless/lorawan/sys/inc/system_task_manager.h:
+
+../src/parser/src/../../ASF/sam0/drivers/port/port.h:
+
+../src/ASF/sam0/drivers/system/pinmux/pinmux.h:

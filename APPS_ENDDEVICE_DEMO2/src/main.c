@@ -151,24 +151,32 @@ int main(void)
     Parser_GetSwVersion(aParserData);
     Parser_TxAddReply((char *)aParserData, (uint16_t)strlen((char *)aParserData));
 	
-	struct port_config pin_conf;
+	//struct port_config pin_conf;
+	/*
 	port_get_config_defaults(&pin_conf);
 	pin_conf.direction  = PORT_PIN_DIR_INPUT;
+	*/
 	
+	/*
 	//Set i2c pins as input and pullup
 	port_pin_set_config(PIN_PA16, &pin_conf);
 	port_pin_set_config(PIN_PA17, &pin_conf);
-	
+	*/
+	/*
 	//Set SPI MISO as input (disable)
 	pin_conf.input_pull = PORT_PIN_PULL_NONE;
 	port_pin_set_config(PIN_PB02, &pin_conf);
+	*/
 	
+	/*
 	port_get_config_defaults(&pin_conf);
 	pin_conf.direction  = PORT_PIN_DIR_INPUT;
 	
 	//This pin is uset for uart logging to nRF52840 from nRF9160. If USB is set up this can be received here and sent over USB
 	port_pin_set_config(PIN_PA06, &pin_conf);
+	*/
 	
+	/*
 	//Set address pins as input (pins are currently not used)
 	port_pin_set_config(AD1_PIN, &pin_conf);
 	port_pin_set_config(AD2_PIN, &pin_conf);
@@ -178,16 +186,17 @@ int main(void)
 	port_pin_set_config(AD6_PIN, &pin_conf);
 	port_pin_set_config(AD7_PIN, &pin_conf);
 	port_pin_set_config(AD8_PIN, &pin_conf);
+	*/
 	
-	
-
+	/*
 	// Configure LED as outputs, turn them off
 	pin_conf.direction  = PORT_PIN_DIR_OUTPUT;
 	port_pin_set_config(PIN_PB03, &pin_conf);
 	port_pin_set_output_level(PIN_PB03, LED_0_ACTIVE);
 	port_pin_set_output_level(LED_0_PIN, LED_0_INACTIVE);
 	//port_pin_set_output_level(LED_1_PIN, LED_1_INACTIVE);
-
+	*/
+	
     while (1)
     {
 		parser_serial_data_handler();

@@ -38,6 +38,7 @@
 #include "parser_private.h"
 
 void Parser_SystemGetVer(parserCmdInfo_t* pParserCmdInfo);
+void Parser_SystemGetCustomID(parserCmdInfo_t* pParserCmdInfo); //VBA 2022 cSLIM specific
 void Parser_SystemReboot(parserCmdInfo_t* pParserCmdInfo);
 void Parser_SystemGetHwEui(parserCmdInfo_t* pParserCmdInfo);
 #ifdef CONF_PMM_ENABLE

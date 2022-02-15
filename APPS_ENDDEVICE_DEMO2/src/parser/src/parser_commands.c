@@ -187,7 +187,8 @@ static const parserCmdEntry_t maParserSysGetCmd[] =
 	{"cryptosn", NULL, Parser_SystemGetCryptoSn, 0, 0},
 	{"cryptodeveui", NULL, Parser_SystemGetCryptoDevEui, 0, 0},
 	{"cryptojoineui", NULL, Parser_SystemGetCryptoJoinEui, 0, 0},
-	{"cryptotkminfo", NULL, Parser_SystemGetCryptoTkmInfo, 0, 0}
+	{"cryptotkminfo", NULL, Parser_SystemGetCryptoTkmInfo, 0, 0},
+	{"customid", NULL, Parser_SystemGetCustomID, 0, 0}
 };
 #define mParserSysGetCmdSize (sizeof(maParserSysGetCmd) / sizeof(maParserSysGetCmd[0]))
 

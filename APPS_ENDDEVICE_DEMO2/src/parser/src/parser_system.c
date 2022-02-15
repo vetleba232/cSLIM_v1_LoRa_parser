@@ -172,6 +172,13 @@ void Parser_SystemGetCryptoTkmInfo(parserCmdInfo_t* pParserCmdInfo)
 	pParserCmdInfo->pReplyCmd = aParserData ;
 }
 
+// Command for get dipswitch addr and send to cSLIM nRF9160
+void Parser_SystemGetCustomID(parserCmdInfo_t* pParserCmdInfo)
+{
+	Parser_GetCustomID(aParserData);
+	pParserCmdInfo->pReplyCmd = aParserData;
+}
+
 void Parser_SystemReboot(parserCmdInfo_t* pParserCmdInfo)
 {
 	// Go for reboot, no reply necessary

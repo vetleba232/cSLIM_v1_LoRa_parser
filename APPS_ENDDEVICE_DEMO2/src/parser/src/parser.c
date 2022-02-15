@@ -44,6 +44,10 @@
 #include "sio2host.h"
 #include "system_task_manager.h"
 #include "pds_interface.h"
+#include "../../ASF/sam0/drivers/port/port.h"
+
+//C:\cSLIM_v1_LoRa_parser\APPS_ENDDEVICE_DEMO2\src\ASF\sam0\drivers\port\port.h
+//C:\cSLIM_v1_LoRa_parser\APPS_ENDDEVICE_DEMO2\src\parser\src\parser.c
 
 #define VER_STR            STACK_VER
 
@@ -161,6 +165,21 @@ void Parser_Main (void)
 
         Parser_RxClearBuffer();
     }
+
+}
+
+void Parser_GetCustomID(char* pBuffData)
+{
+	
+	uint8_t pinLevels[4];
+	uint32_t portMask = 0x01833018;
+	uint32_t pinLevels32 = port_group_get_input_level(port_get_group_from_gpio_pin(PIN_PA07),portMask);
+	pinLevels[0] = pinLevels32 & 0xff;
+	pinLevels[1] = (pinLevels32>>8) & 0xff;
+	pinLevels[2] = (pinLevels32>>16) & 0xff;
+	pinLevels[3] = (pinLevels32>>24) & 0xff;
+	
+	Parser_IntArrayToHexAscii(4, pinLevels, pBuffData);
 
 }
 
