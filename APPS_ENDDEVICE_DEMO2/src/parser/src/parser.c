@@ -171,29 +171,18 @@ void Parser_Main (void)
 void Parser_GetCustomID(char* pBuffData)
 {
 	
-	/*
-	uint8_t pinLevels[4];
-	uint32_t portMask = 0x01833018;
-	uint32_t pinLevels32 = port_group_get_input_level(port_get_group_from_gpio_pin(PIN_PA07),portMask);
-	int PinLevelsInt = (int)pinLevels32;
-	pinLevels[0] = PinLevelsInt & 0xff;
-	pinLevels[1] = (PinLevelsInt>>8) & 0xff;
-	pinLevels[2] = (PinLevelsInt>>16) & 0xff;
-	pinLevels[3] = (PinLevelsInt>>24) & 0xff;
-	*/
 	
-	uint8_t AddressPins[9] = {128,0,0,0,0,0,0,0,0};
-	if(port_pin_get_input_level(PIN_PA14))AddressPins[1]=1;
-	if(port_pin_get_input_level(PIN_PA28))AddressPins[2]=1;
-	if(port_pin_get_input_level(PIN_PA15))AddressPins[3]=1;
-	if(port_pin_get_input_level(PIN_PA19))AddressPins[4]=1;
-	if(port_pin_get_input_level(PIN_PA18))AddressPins[5]=1;
-	if(port_pin_get_input_level(PIN_PA27))AddressPins[6]=1;
-	if(port_pin_get_input_level(PIN_PA08))AddressPins[7]=1;
-	if(port_pin_get_input_level(PIN_PA07))AddressPins[8]=1;
-			
-	Parser_IntArrayToHexAscii(9, AddressPins, pBuffData);
-
+	char AddressPins[10] = {'9','1','1','1','1','1','1','1','1'};
+	if(port_pin_get_input_level(PIN_PA07))AddressPins[1]='0';
+	if(port_pin_get_input_level(PIN_PA08))AddressPins[2]='0';
+	if(port_pin_get_input_level(PIN_PA27))AddressPins[3]='0';
+	if(port_pin_get_input_level(PIN_PA18))AddressPins[4]='0';
+	if(port_pin_get_input_level(PIN_PA19))AddressPins[5]='0';
+	if(port_pin_get_input_level(PIN_PA15))AddressPins[6]='0';
+	if(port_pin_get_input_level(PIN_PA28))AddressPins[7]='0';
+	if(port_pin_get_input_level(PIN_PA14))AddressPins[8]='0';
+	AddressPins[9]='\0';
+	memcpy(pBuffData, AddressPins, sizeof(AddressPins));
 }
 
 void Parser_GetSwVersion(char* pBuffData)

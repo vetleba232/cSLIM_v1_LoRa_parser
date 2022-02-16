@@ -55,15 +55,6 @@
 #include "sal.h"
 #include "edbg_eui.h"
 
-//cSLIM
-#define AD1_PIN PIN_PA14
-#define AD2_PIN PIN_PA28
-#define AD3_PIN PIN_PA15
-#define AD4_PIN PIN_PA19
-#define AD5_PIN PIN_PA18
-#define AD6_PIN PIN_PA27
-#define AD7_PIN PIN_PA08
-#define AD8_PIN PIN_PA07
 
 /************************** macro definition ***********************************/
 
