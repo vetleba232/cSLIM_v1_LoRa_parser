@@ -25378,7 +25378,7 @@ OUTPUT(APPS_ENDDEVICE_DEMO2.elf elf32-littlearm)
  .debug_ranges  0x00002788       0x30 src/main.o
  .debug_ranges  0x000027b8       0x58 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
 
-.debug_macro    0x00000000    0x3533e
+.debug_macro    0x00000000    0x3530e
  .debug_macro   0x00000000      0x1ee src/ASF/thirdparty/cryptolib/atca_basic.o
  .debug_macro   0x000001ee      0x940 src/ASF/thirdparty/cryptolib/atca_basic.o
  .debug_macro   0x00000b2e      0x16d src/ASF/thirdparty/cryptolib/atca_basic.o
@@ -25679,13 +25679,13 @@ OUTPUT(APPS_ENDDEVICE_DEMO2.elf elf32-littlearm)
  .debug_macro   0x000333e9      0x620 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
  .debug_macro   0x00033a09       0x10 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
  .debug_macro   0x00033a19      0x5ed src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
- .debug_macro   0x00034006      0x8e3 src/main.o
- .debug_macro   0x000348e9       0x47 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
- .debug_macro   0x00034930      0x7ea ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
- .debug_macro   0x0003511a      0x214 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
- .debug_macro   0x0003532e       0x10 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x00034006      0x8b3 src/main.o
+ .debug_macro   0x000348b9       0x47 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x00034900      0x7ea ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x000350ea      0x214 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_macro   0x000352fe       0x10 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
 
-.debug_line     0x00000000    0x3b549
+.debug_line     0x00000000    0x3b54a
  .debug_line    0x00000000      0x5f4 src/ASF/thirdparty/cryptolib/atca_basic.o
  .debug_line    0x000005f4      0x713 src/ASF/thirdparty/cryptolib/atca_basic_aes.o
  .debug_line    0x00000d07      0x491 src/ASF/thirdparty/cryptolib/atca_basic_gendig.o
@@ -25766,10 +25766,10 @@ OUTPUT(APPS_ENDDEVICE_DEMO2.elf elf32-littlearm)
  .debug_line    0x00037403     0x12d8 src/ASF/thirdparty/wireless/lorawan/tal/sx1276/src/radio_driver_SX1276.o
  .debug_line    0x000386db      0xcd7 src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/hw_timer.o
  .debug_line    0x000393b2      0xb0b src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
- .debug_line    0x00039ebd     0x13cf src/main.o
- .debug_line    0x0003b28c      0x2bd ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_line    0x00039ebd     0x13d0 src/main.o
+ .debug_line    0x0003b28d      0x2bd ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
 
-.debug_str      0x00000000    0xba391
+.debug_str      0x00000000    0xba309
  .debug_str     0x00000000     0xa913 src/ASF/thirdparty/cryptolib/atca_basic.o
                                0xada8 (size before relaxing)
  .debug_str     0x0000a913      0x346 src/ASF/thirdparty/cryptolib/atca_basic_aes.o
@@ -25930,9 +25930,9 @@ OUTPUT(APPS_ENDDEVICE_DEMO2.elf elf32-littlearm)
                               0x943b6 (size before relaxing)
  .debug_str     0x000b94b0       0x93 src/ASF/thirdparty/wireless/services/nvm/sam0/sam_nvm.o
                               0x93619 (size before relaxing)
- .debug_str     0x000b9543      0x277 src/main.o
-                              0x9a0df (size before relaxing)
- .debug_str     0x000b97ba      0xbd7 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
+ .debug_str     0x000b9543      0x1ef src/main.o
+                              0x9a057 (size before relaxing)
+ .debug_str     0x000b9732      0xbd7 ../src/ASF/thirdparty/wireless/services/common_hw_timer/sam0/lib\libsam0_lib_hw_timer.a(common_hw_timer.o)
                                0x2c21 (size before relaxing)
 
 .debug_frame    0x00000000     0x70ac
